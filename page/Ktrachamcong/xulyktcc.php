@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 if(isset($_REQUEST['btnduyet'])){
     $MaBCC = $_REQUEST['btnduyet'];
@@ -25,23 +24,6 @@ if(isset($_REQUEST['btnduyet'])){
             
             $sogio = number_format($sogio, 1);
             $sql = "UPDATE bangchamcong SET TrangThai='Đã duyệt', Sogiolam='$sogio' WHERE MaBCC='$MaBCC'";
-=======
-
-<?php
-if(isset($_REQUEST['btnduyet'])){
-    $MaBCC=$_REQUEST['btnduyet'];
-    $sl="Select* from bangchamcong where MaBCC='$MaBCC' ";
-    if($sl){
-        $SG = $dbh->prepare($sl);
-        $SG->execute();
-        $result = $SG->fetchAll(PDO::FETCH_ASSOC);
-        foreach ($result as $row) {
-            $gio_sau = strtotime($row['GioCheckout']);
-            $gio_truoc = strtotime($row['GioCheckin']);
-            $sogio = ($gio_sau - $gio_truoc) / 3600;
-            $sogio=number_format($sogio, 1);
-            $sql="update bangchamcong set TrangThai='Đã duyệt',Sogiolam='$sogio' where MaBCC='$MaBCC'";
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
             $dbh->exec($sql);
             echo '
             <div class="notification" id="notification">
@@ -55,16 +37,10 @@ if(isset($_REQUEST['btnduyet'])){
         }
     }
 }
-<<<<<<< HEAD
 
 if (isset($_REQUEST['btnxoa'])) {
     $MaBCC = $_REQUEST['btnxoa'];
     $sql = "DELETE FROM bangchamcong WHERE MaBCC='$MaBCC'";
-=======
-if(isset($_REQUEST['btnxoa'])){
-    $MaBCC=$_REQUEST['btnxoa'];
-    $sql="delete from bangchamcong where MaBCC='$MaBCC'";
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
     $dbh->exec($sql);
     echo '
     <div class="notification" id="notification">
@@ -76,10 +52,5 @@ if(isset($_REQUEST['btnxoa'])){
         }, 2000); 
     </script>';
 }
-<<<<<<< HEAD
 $dbh = null;
 ?>
-=======
-$dbh=null;
-?>
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2

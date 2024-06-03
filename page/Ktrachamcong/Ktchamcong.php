@@ -15,11 +15,7 @@
                 FROM bangchamcong AS bcc
                 INNER JOIN nguoidung AS nd ON nd.MaND = bcc.MaND
                 WHERE bcc.Ngay BETWEEN :ngayBatDau AND :ngayKetThuc
-<<<<<<< HEAD
                 ORDER BY  bcc.Ngay DESC,MaBCC DESC";
-=======
-                ORDER BY MaBCC DESC";
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
 
         // Chuẩn bị và thực thi truy vấn
         $lnp = $dbh->prepare($sql);

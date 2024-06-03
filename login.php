@@ -77,15 +77,7 @@ if(isset($_POST['login'])){
 								<?php if($wrongusername){echo $wrongusername;}?>
 								<div class="form-group text-center">
 									<button class="btn btn-primary account-btn" name="login" type="submit">Login</button>
-<<<<<<< HEAD
 										
-=======
-										<div class="col-auto pt-2">
-											<a class="text-muted float-right" href="forgot-password.php">
-												Forgot password?
-											</a>
-										</div>
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
 								</div>
 									
 							</form>

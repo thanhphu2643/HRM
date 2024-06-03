@@ -10,7 +10,6 @@
       </div>
       <div class="modal-body">
        <!-- Form thêm nhân viên -->
-<<<<<<< HEAD
 <form method="post" id="formThemNhanVien" class="row" enctype="multipart/form-data">
     <div class="col-md-12">
         <div class="form-group row">
@@ -23,20 +22,6 @@
             <label for="ten" class="col-md-3 col-form-label">Tên:</label>
             <div class="col-md-9">
                 <input type="text" name="ten" id="ten" class="form-control" required>
-=======
-<form method="post"  class="row" enctype="multipart/form-data" >
-    <div class="col-md-12">
-        <div class="form-group row">
-            <label for="hoten" class="col-md-3 col-form-label">Họ đệm:</label>
-            <div class="col-md-9">
-                <input type="text" name="hodem" id="hoten" class="form-control" required>
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="hoten" class="col-md-3 col-form-label">Tên:</label>
-            <div class="col-md-9">
-                <input type="text" name="ten" id="hoten" class="form-control" required>
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
             </div>
         </div>
         <div class="form-group row">
@@ -55,21 +40,13 @@
         <div class="form-group row">
             <label for="ngaysinh" class="col-md-3 col-form-label">Ngày Sinh:</label>
             <div class="col-md-9">
-<<<<<<< HEAD
                 <input type="date" name="ngaysinh" id="ngaysinh" class="form-control" required>
-=======
-                <input type="date" name="ngaysinh" id="ngaysinh" class="form-control" required >
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
             </div>
         </div>
         <div class="form-group row">
             <label class="col-md-3 col-form-label">Địa chỉ:</label>
             <div class="col-md-9">
-<<<<<<< HEAD
                 <input type="text" name="diachi" id="diachi" class="form-control" required>
-=======
-                <input type="diachi" name="diachi" id="diachi" class="form-control"  required>
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
             </div>
         </div>
         <div class="form-group row">
@@ -81,11 +58,7 @@
         <div class="form-group row">
             <label for="stk" class="col-md-3 col-form-label">Số Tài Khoản:</label>
             <div class="col-md-9">
-<<<<<<< HEAD
                 <input type="number" name="stk" id="stk" class="form-control" required>
-=======
-                <input type="number" name="stk" id="stk" class="form-control"required >
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
             </div>
         </div>
         <div class="form-group row">
@@ -95,7 +68,6 @@
             </div>
         </div>
         <div class="form-group row">
-<<<<<<< HEAD
             <label class="col-md-3 col-form-label">Ngày bắt đầu:</label>
             <div class="col-md-9">
                 <input type="date" name="NBD" id="NBD" class="form-control" required>
@@ -111,23 +83,6 @@
             <label class="col-md-3 col-form-label">BHXH:</label>
             <div class="col-md-9">
                 <input type="text" name="BHXH" class="form-control" required value="0.08" readonly>
-=======
-            <label  class="col-md-3 col-form-label">Ngày bắt đầu:</label>
-            <div class="col-md-9">
-                <input type="date" name="NBD" id="NBD" class="form-control" required >
-            </div>
-        </div>
-        <div class="form-group row">
-            <label  class="col-md-3 col-form-label">Lương theo giờ: </label>
-            <div class="col-md-9">
-                <input type="number" name="HeSoLuong" class="form-control" required >
-            </div>
-        </div>
-        <div class="form-group row">
-            <label  class="col-md-3 col-form-label">BHXH:</label>
-            <div class="col-md-9">
-                <input type="text" name="BHXH" class="form-control" required >
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
             </div>
         </div>
         <div class="form-group row">
@@ -136,10 +91,6 @@
                 <input type="file" name="file" id="img" class="form-control-file" accept="image/*" required>
             </div>
         </div>
-<<<<<<< HEAD
-=======
-        
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
     </div>
     <div class="col-md-12 mt-3">
         <button type="submit" class="btn btn-primary" name="btn_themnv">Thêm</button>
@@ -148,7 +99,6 @@
       </div>
     </div>
   </div>
-<<<<<<< HEAD
 </div> 
 
 <script>
@@ -205,6 +155,3 @@ document.getElementById('formThemNhanVien').addEventListener('submit', function(
     }
 });
 </script>
-=======
-</div>
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2

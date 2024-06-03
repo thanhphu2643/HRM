@@ -1,13 +1,8 @@
 <?php
 // Kết nối đến cơ sở dữ liệu
 $servername = "localhost";
-<<<<<<< HEAD
 $username = "thanhphu";
 $password = "123";
-=======
-$username = "LamVanHung";
-$password = "0908";
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
 $dbname = "qlns";
 
 $conn = new mysqli($servername, $username, $password, $dbname);

@@ -307,32 +307,18 @@
         function openModal(day, weekday) {
             const today = new Date();
             const fiveDaysLater = new Date();
-<<<<<<< HEAD
             fiveDaysLater.setDate(today.getDate() + 3); // Tăng ngày hiện tại lên 3 ngày
 
             // Kiểm tra nếu ngày được chọn lớn hơn hoặc bằng ngày 3 ngày sau ngày hiện tại
              if (new Date(day) >= fiveDaysLater) {
-=======
-            fiveDaysLater.setDate(today.getDate() + 3); // Tăng ngày hiện tại lên 5 ngày
-
-            // Kiểm tra nếu ngày được chọn lớn hơn hoặc bằng ngày 5 ngày sau ngày hiện tại
-            if (new Date(day) >= fiveDaysLater) {
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
                 $('#myModal').modal('show');
                 document.getElementById('modalDay').value = day;
                 document.getElementById('workDay').value = weekday;
                 document.getElementById('modalDayDisplay').innerText = weekdayText(weekday);
-<<<<<<< HEAD
              } else {
                  // Hiển thị thông báo hoặc thực hiện hành động khác nếu không đủ điều kiện
                  alert("Bạn chỉ có thể đăng ký lịch làm việc cho 3 ngày tiếp theo từ ngày hiện tại.");
              }
-=======
-            } else {
-                // Hiển thị thông báo hoặc thực hiện hành động khác nếu không đủ điều kiện
-                alert("Bạn chỉ có thể đăng ký lịch làm việc cho 5 ngày tiếp theo từ ngày hiện tại.");
-            }
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
         }
 
 

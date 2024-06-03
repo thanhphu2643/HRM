@@ -44,10 +44,7 @@
             background-color: #9E9E9E;
             cursor: not-allowed;
         }
-<<<<<<< HEAD
         
-=======
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
     </style>
 </head>
 <body>
@@ -142,11 +139,7 @@
                 faceDescriptors.push(new faceapi.LabeledFaceDescriptors(label, float32ArrayDescriptors));
             });
 
-<<<<<<< HEAD
             const faceMatcher = new faceapi.FaceMatcher(faceDescriptors, 0.5);
-=======
-            const faceMatcher = new faceapi.FaceMatcher(faceDescriptors, 0.4);
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
             const image = await getImageFromDataUrl(imageData);
             const detections = await faceapi.detectAllFaces(image).withFaceLandmarks().withFaceDescriptors();
 

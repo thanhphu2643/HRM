@@ -49,7 +49,6 @@
             cursor: not-allowed;
 
         }
-<<<<<<< HEAD
         #capturedImagesContainer {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -60,8 +59,6 @@
             height: auto;
         }
 
-=======
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
     </style>
 </head>
 <body>

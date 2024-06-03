@@ -30,11 +30,7 @@
                 echo "<td>" . $row['LyDo'] . "</td>";
         
                 if($row['TrangThai']!='Đã duyệt'){
-<<<<<<< HEAD
                     echo '<td align="center"><button onclick="return confirm(\'Bạn có chắc muốn xóa đăng ký nghỉ phép này không?\'); " type="submit" value="'.$row["MaLNP"].'" name="btnxoa" class="btnxoa">Xóa</button>
-=======
-                    echo '<td align="center"><button onclick="return confirm(\'Bạn có chắc muốn xóa không?\'); " type="submit" value="'.$row["MaLNP"].'" name="btnxoa" class="btnxoa">Xóa</button>
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
                     <button  value="'.$row["MaLNP"].'" name="btnduyet" class="btnduyet">Duyệt</button></td>';
                 }else{
                     echo '<td><button  disabled class="btnduyet">Đã duyệt</button></td>';

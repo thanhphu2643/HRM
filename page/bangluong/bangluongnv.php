@@ -119,11 +119,7 @@ if (isset($_POST['submit'])) {
                             if ($trangThai == 1) {
                                 echo "<button type='submit' name='save' class='btnsave' disabled>Đã Lưu</button>";
                             } else {
-<<<<<<< HEAD
                                 echo "<button type='submit' name='save' class='btnsave' >Lưu</button>";
-=======
-                                echo "<button type='submit' name='save' class='btnsave'>Lưu</button>";
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
                             }
                         } else {
                             // Nếu không có dữ liệu, hiển thị nút "Lưu" cho phép người dùng lưu dữ liệu mới
@@ -131,11 +127,7 @@ if (isset($_POST['submit'])) {
                         }
                     } else {
                         // Nếu không phải tháng trước, không hiển thị nút "Lưu"
-<<<<<<< HEAD
                         // echo "<button type='submit' name='save' class='btnsave' style='background-color: #CCC; color:black' disabled>Lưu</button>";
-=======
-                        echo "<button type='submit' name='save' class='btnsave' disabled>Lưu</button>";
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
                     }
                 } else {
                     echo "<p>Hiện chưa có thông tin.</p>";
@@ -170,15 +162,6 @@ if (isset($_POST['submit'])) {
                 </div>
             </div>
             <div class="form-group row">
-<<<<<<< HEAD
-=======
-                <label  class="col-md-3 col-form-label">BHXH :</label>
-                <div class="col-md-9">
-                    <input type="number" name="BHXH" class="form-control"  value="<?php echo $BHXH; ?>" >
-                </div>
-            </div>
-            <div class="form-group row">
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
                 <label for="thangupdate" class="col-md-3 col-form-label">Tháng cần cập nhật:</label>
                 <div class="col-md-9">
                     <input type="number" name="thangupdate" id="thangupdate" class="form-control" required value="<?php echo date('m'); ?>">
@@ -212,13 +195,10 @@ if (isset($_POST['submit'])) {
             alert("Tháng cập nhật không được nhỏ hơn tháng hiện tại!");
             return false; // Ngăn chặn việc submit form nếu thỏa điều kiện
         }
-<<<<<<< HEAD
         if (parseInt(selectedMonth) > currentMonth) {
             alert("Tháng cập nhật không được lớn hơn tháng hiện tại!");
             return false; // Ngăn chặn việc submit form nếu thỏa điều kiện
         }
-=======
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
         return true; // Cho phép submit form nếu không có lỗi
     }
    

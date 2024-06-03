@@ -182,16 +182,12 @@
         dataForDaysRow.innerHTML = '';
 
         const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-<<<<<<< HEAD
         
         // Tính ngày bắt đầu và kết thúc của tuần hiện tại
         const startOfWeek = new Date(currentDate);
         startOfWeek.setDate(startOfWeek.getDate() - startOfWeek.getDay() + 1);
         const endOfWeek = new Date(startOfWeek);
         endOfWeek.setDate(startOfWeek.getDate() + 6);
-=======
-        const currentDateFormatted = currentDate.toISOString().slice(0, 10);
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
 
         // Populate row for days of week
         for (let i = 0; i < 7; i++) {
@@ -202,13 +198,8 @@
 
         // Populate row for calendar days
         for (let i = 0; i < 7; i++) {
-<<<<<<< HEAD
             const day = new Date(startOfWeek);
             day.setDate(day.getDate() + i);
-=======
-            const day = new Date(currentDate);
-            day.setDate(day.getDate() - (day.getDay() - 1) + i);
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
             const dayCell = document.createElement('td');
             dayCell.textContent = day.getDate();
 
@@ -222,13 +213,8 @@
 
         // Populate row for data for each day
         for (let i = 0; i < 7; i++) {
-<<<<<<< HEAD
             const day = new Date(startOfWeek);
             day.setDate(day.getDate() + i);
-=======
-            const day = new Date(currentDate);
-            day.setDate(day.getDate() - (day.getDay() - 1) + i);
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
             const lichLamViecNgay = lichLamViec.filter(item => item.ngayDangKy === day.toISOString().slice(0, 10));
             const dataCell = document.createElement('td');
             
@@ -290,15 +276,8 @@
             dataForDaysRow.appendChild(dataCell);
         }
 
-<<<<<<< HEAD
         const startDateString = startOfWeek.toDateString().split(' ')[1] + ' ' + startOfWeek.getDate();
         const endDateString = endOfWeek.toDateString().split(' ')[1] + ' ' + endOfWeek.getDate();
-=======
-        const startDateString = currentDate.toDateString().split(' ')[1] + ' ' + currentDate.getDate();
-        const endDate = new Date(currentDate);
-        endDate.setDate(endDate.getDate() + 6);
-        const endDateString = endDate.toDateString().split(' ')[1] + ' ' + endDate.getDate();
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
         document.querySelector('.date-info').textContent = `${startDateString} - ${endDateString}`;
     }
     function ajax(){

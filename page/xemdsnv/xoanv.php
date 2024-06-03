@@ -9,11 +9,7 @@ if(isset($_REQUEST['btnxoa'])){
             $result = $dbh->exec($sqli);
             echo '
                 <div class="notification" id="notification">
-<<<<<<< HEAD
                 Xóa nhân viên thành công!
-=======
-                Hủy nhân viên thành công!
->>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
                 </div>
                 <script>
                     setTimeout(function(){
