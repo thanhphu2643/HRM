@@ -20,7 +20,11 @@
         $dbh->exec($sql);
         echo '
         <div class="notification" id="notification">
+<<<<<<< HEAD
              Từ chối phê duyệt thành công!
+=======
+            Xóa nghỉ phép thành công!
+>>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
         </div>
         <script>
             setTimeout(function(){

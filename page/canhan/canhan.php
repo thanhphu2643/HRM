@@ -104,6 +104,7 @@ $hoten=$_SESSION['hoten'];
                     </tr>
                     <tr>
                         <td>Họ và tên: </td>
+<<<<<<< HEAD
                         <td><input type="text" name="HoVaTen"  readonly  class="iput"  value="'.$row['HoVaTen'].'"></td>
                     </tr>
                     <tr>
@@ -121,6 +122,25 @@ $hoten=$_SESSION['hoten'];
                     <tr>
                     <td>Ngày bắt đầu: </td>
                         <td><input type="date" class="iput" readonly  value="'.$row['NgayBatDau'].'"></td>
+=======
+                        <td><input type="text" name="HoVaTen"  class="iput"  value="'.$row['HoVaTen'].'"></td>
+                    </tr>
+                    <tr>
+                        <td>Giới tính: </td>
+                        <td><input type="text"name="gioitinh" class="iput"  value="'.$row['GioiTinh'].'"></td>
+                    </tr>
+                    <tr>
+                        <td>Ngày sinh:  </td>
+                        <td><input type="date" name="ngaysinh"  class="date" value="'.$row['NgaySinh'].'"></td>
+                    </tr>
+                    <tr>
+                        <td>Chức vụ: </td>
+                        <td><input type="text" class="iput"  value="'.$row['TenCV'].'"></td>
+                    </tr>
+                    <tr>
+                    <td>Ngày bắt đầu: </td>
+                        <td><input type="date" class="iput"  value="'.$row['NgayBatDau'].'"></td>
+>>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
                     </tr>   
                     <tr>
                         <td>Số điện thoại: </td>

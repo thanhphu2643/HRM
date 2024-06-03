@@ -6,7 +6,10 @@ try {
     $sql = "SELECT nd.*, cv.TenCV
             FROM nguoidung AS nd
             INNER JOIN chucvu AS cv ON nd.MaCV = cv.MaCV
+<<<<<<< HEAD
             
+=======
+>>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
              ";
 
     // Thêm điều kiện lọc dựa vào lựa chọn của người dùng
@@ -18,8 +21,11 @@ try {
         }elseif($_POST['status'] == 'account') {
             $sql = "select *,tk.MaND from taikhoan tk join nguoidung nd on tk.MaND=nd.MaND group by tk.MaND  ";
         }
+<<<<<<< HEAD
     }else{
         $sql .= "WHERE NgayKetThuc = '0000-00-00'";
+=======
+>>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
     }
 
     // Thực hiện truy vấn
@@ -51,7 +57,11 @@ try {
         <th>STT</th>
         <th>Họ và Tên</th>
         <th>Tên đăng nhập</th>
+<<<<<<< HEAD
         <th>Create at</th>
+=======
+        <th>Last_login</th>
+>>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
         </tr>";
         $dem=1;
         foreach ($result as $row) {
@@ -92,7 +102,11 @@ try {
         echo "<td>" . $row['TenCV'] . "</td>";
         $dem++;
         if($row['NgayKetThuc'] == '0000-00-00') {
+<<<<<<< HEAD
                 echo '<td><button onclick="return confirm(\'Bạn có chắc muốn xóa nhân viên này không?\');" type="submit" value="'.$row["MaND"].'" name="btnxoa" class="btnxoa">Xóa</button>';
+=======
+                echo '<td><button onclick="return confirm(\'Bạn có chắc muốn xóa không?\');" type="submit" value="'.$row["MaND"].'" name="btnxoa" class="btnxoa">Hủy</button>';
+>>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
         } else {
         }
         
@@ -109,7 +123,11 @@ try {
     <div class="row">
     <div class="col-md-11 text-right">
     <button type="button" class="btnthemnv btn-primary" data-toggle="modal" data-target="#themNhanVienModal" >
+<<<<<<< HEAD
     Thêm nhân viên
+=======
+    Thêm Nhân viên
+>>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
     </button>
     </div>
     </div>

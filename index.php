@@ -72,7 +72,11 @@
 							<div class="card-group ">
 								<div class="card ">
 							';
+<<<<<<< HEAD
 									 include_once('./page/chart/SoluongNV.php'); 
+=======
+									 include_once('./page/chart/charstatus.php'); 
+>>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
 							echo'	</div>
 								<div class="card">
 							';

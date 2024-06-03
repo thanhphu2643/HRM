@@ -33,7 +33,11 @@ if(isset($_REQUEST['save'])){
             $dataSaved=true;
             echo '
             <div class="notification" id="notification">
+<<<<<<< HEAD
                 Lưu bảng lương thành công!
+=======
+                Lưu thành công!
+>>>>>>> e39f024e7afbee9ee494b0600f24603ab9d16ca2
             </div>
             <script>
                 setTimeout(function(){
